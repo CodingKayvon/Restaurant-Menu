@@ -1,0 +1,147 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.section-center {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  row-gap: 50px;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.underline {
+  height: 3px;
+  width: 50px;
+  margin-top: -10px;
+  background-color: rgb(172, 148, 17);
+  font-weight: bold;
+}
+
+img {
+  height: 200px;
+  width: 280px;
+  border-style: solid;
+  border-color: rgb(172, 148, 17);
+  border-radius: 12px;
+  margin-right: 20px;
+}
+
+.menu-item {
+  display: flex;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-template-rows: auto 180px;
+  justify-content: space-between;
+  height: 25px;
+  width: 100%;
+  border-bottom: solid;
+  border-bottom-color: rgba(82, 81, 80, 0.2);
+  border-bottom-width: 2px;
+}
+
+h4, .price {
+  display: flex;
+  letter-spacing: 2px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.price,
+.filter-btn {
+  color: rgb(172, 148, 17);
+}
+
+
+
+p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  word-break: break-all;
+  width: 105%;
+  margin-top: 20px;
+  margin-bottom: 0;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 25px;
+  margin-bottom: 60px;
+}
+
+.filter-btn {
+  padding: 4px 9px 4px 9px;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  background-color: transparent;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(172, 148, 17);
+  font-weight: bold;
+  transition: 0.4s ease;
+  transition-property: background-color;
+  cursor: pointer;
+}
+
+.filter-btn:hover {
+  background-color: rgb(172, 148, 17);
+  color: white;
+  transition: 0.4s ease;
+}
+
+
+
+
+
+
+@media (max-width: 600px){
+  .menu{
+    margin: 0;
+  }
+
+  .section-center{
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: center;
+  }
+
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    margin: 0;
+    margin-bottom: 200px;
+  }
+
+  header {
+    margin-top: 15px;
+  }
+
+  img{
+    height: 250px;
+    width: 325px;
+    background-position: center;
+  }
+ 
+}
